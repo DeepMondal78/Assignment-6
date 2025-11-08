@@ -1,5 +1,3 @@
-// server.js
-
 
 const http = require('http');
 const fs = require('fs');
@@ -12,7 +10,7 @@ const server = http.createServer((req, res) => {
     
     console.log(`Request received for: ${req.url}`);
 
-    // Basic routing logic
+
     let filePath;
     let contentType = 'text/html';
     let statusCode = 200;
@@ -39,7 +37,6 @@ const server = http.createServer((req, res) => {
             break;
     }
 
-    // 4. Asynchronously read the file
     fs.readFile(filePath, (err, content) => {
         if (err) {
           
@@ -56,5 +53,5 @@ const server = http.createServer((req, res) => {
 
 
 server.listen(PORT, () => {
-    console.log(`✅ Server is running successfully on http://localhost:${PORT}`);
+    console.log(`Server is running successfully on http://localhost:${PORT}`);
 });
