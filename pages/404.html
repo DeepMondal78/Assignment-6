@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 not Found page</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .error {
+            width: 600px;
+            box-shadow: 0 0 0 9px rgba(228, 217, 228, 0.667);
+            padding: 20px;
+        }
+
+        #back-btn {
+            padding: 15px 20px;
+            background-color: rgb(103, 103, 246);
+            color: white;
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .flex {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error">
+        <h1>404-Page Not Found</h1>
+        <p>Oops!The page you are looking for does not exist.</p>
+        <div class="flex items-center">
+            <a href="/"><button id="back-btn">back to home</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
